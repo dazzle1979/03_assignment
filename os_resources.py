@@ -3,7 +3,7 @@ import psutil
 
 class OsResources:
     """Class for fetching cpu and memory statistics."""
-    
+
     @classmethod
     def get_cpu(cls):
         """Get CPU percentage."""
@@ -13,8 +13,8 @@ class OsResources:
     @classmethod
     def get_free_mem_perc(cls):
         """Get memory percentage."""
-       memory_used_perc = psutil.virtual_memory().percent
-       return memory_used_perc
+        memory_used_perc = psutil.virtual_memory().percent
+        return memory_used_perc
 
     @classmethod
     def get_free_mem_mb(cls):
